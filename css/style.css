@@ -56,6 +56,11 @@ hr {
   margin: 10px;
 }
 
+.btn-custom {
+  /* color: white; */
+  background-color: #fffbeb !important;
+}
+
 /* Projects Section */
 .project-img {
   height: 100%;
@@ -64,6 +69,7 @@ hr {
 .card {
   border: none;
 }
+
 .cards {
   display: flex;
   align-items: end;
@@ -120,4 +126,9 @@ footer p {
   padding-bottom: 50px;
   padding-top: 40px;
   color: #fffbeb;
+}
+
+.footer-icons a:hover {
+  color: black;
+  /* box-shadow: rgba(255, 255, 255, 0.) */
 }

@@ -60,7 +60,7 @@
           <!-- Hero Section -->
           <div class="row">
             <div class="col-lg-6 heroText">
-              <h1 class="display-4">Hi I'm Waseem</h1>
+              <h1 class="display-4 font-weight-bold">Hi I'm Waseem</h1>
               <p class="lead">Web Developer & IT Manager</p>
               <!-- <hr class="my-4" /> -->
               <div class="icons">
@@ -74,6 +74,9 @@
                   ><i class="fa-brands fa-linkedin"></i
                 ></a>
               </div>
+              <a href="#about-contact" class="btn btn-custom btn-lg">
+                <i class="fa-regular fa-envelope"></i> Contact Me
+              </a>
             </div>
             <div class=""></div>
           </div>
@@ -84,7 +87,7 @@
     <!-- Work Section -->
     <section id="work">
       <div class="container">
-        <h4 class="text-center section-title">Portfolio Work</h4>
+        <h4 class="text-center section-title text-uppercase">Portfolio Work</h4>
         <div class="row">
           <!-- Card 1 -->
           <div class="col-sm-12 col-md-12 col-lg-12">
@@ -92,7 +95,10 @@
               <img src="./images/HoriseonProject.png" class="" alt="..." />
               <div class="card-txt">
                 <div class="card-body">
-                  <h5 class="card-title">Horiseon - HTML/CSS</h5>
+                  <h5 class="card-title">
+                    Horiseon <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                  </h5>
                   <p class="card-text">
                     The aim of this project was to refactor the html to make it
                     more accessible by changing the div tags with semantic html
@@ -130,7 +136,11 @@
               />
               <div class="">
                 <div class="card-body">
-                  <h5 class="card-title">Trillogy Bootcamp Pre-Work</h5>
+                  <h5 class="card-title">
+                    Trillogy Bootcamp Pre-Work
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                  </h5>
                   <p class="card-text">
                     The aim of this project was to get farmiliar with basic html
                     and css by building a small project. This will be a
@@ -180,7 +190,7 @@
     <!-- Skills Section -->
     <section class="skills" id="skills">
       <div class="container">
-        <h4 class="text-center section-title">My Skills</h4>
+        <h4 class="text-center section-title text-uppercase">My Skills</h4>
         <div class="row">
           <!-- Card 1 -->
           <div class="col-sm-12 col-md-6 col-lg-3">
@@ -249,6 +259,17 @@
               </div>
             </div>
           </div>
+          <!-- Card 7 -->
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card text-center my-4">
+              <div class="card-body">
+                <span class="skill-icon">
+                  <i class="fa-brands fa-github"></i>
+                </span>
+                <h4 class="text-uppercase">git & github</h4>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -257,8 +278,8 @@
     <section id="about-contact">
       <div class="container my-4">
         <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <h4 class="section-title">About</h4>
+          <div class="col-sm-12 col-md-6 text-sm-center text-md-left">
+            <h4 class="section-title text-uppercase">About</h4>
             <p>
               Hi I’m waseem an aspiring developer in the making, I started my
               career as a dispensing optician in 2007 where I developed an
@@ -281,20 +302,32 @@
             </p>
           </div>
           <div class="col-sm-12 col-md-6">
-            <h4 class="section-title">Contact Me</h4>
-            <form action="">
+            <h4
+              class="section-title text-uppercase text-sm-center text-md-left"
+            >
+              Contact Me
+            </h4>
+            <form
+              action="https://formsubmit.co/beeps_aim0m@icloud.com"
+              method="POST"
+            >
               <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" />
+                <input type="text" name="Name" class="form-control" id="name" />
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" />
+                <input
+                  type="email"
+                  name="Email"
+                  class="form-control"
+                  id="email"
+                />
               </div>
               <div class="form-group">
                 <label for="message">Message</label>
                 <textarea
-                  name=""
+                  name="Message"
                   id="message"
                   rows="3"
                   class="form-control"
