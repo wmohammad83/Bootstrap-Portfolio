@@ -19,7 +19,7 @@
       crossorigin="anonymous"
     />
     <!-- This stylesheet is an example of how you can add your own stylesheet to customize bootstrap components. Notice how it is loaded 2nd to the required bootstrap stylesheet. This is so our stylesheet will overwrite bootstrap classes when we apply the same class but different styles to the stylsheet -->
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>Waseem Mohammad</title>
   </head>
@@ -27,8 +27,7 @@
     <div class="jumbotron">
       <div class="container">
         <!-- Bootstrap navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="#">Waseem Mohammad</a>
+        <nav class="navbar navbar-expand-lg navbar-dark">
           <button
             class="navbar-toggler"
             type="button"
@@ -38,7 +37,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon .custom-toggler"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
@@ -57,15 +56,26 @@
             </ul>
           </div>
         </nav>
-
-        <!-- Hero Section -->
-        <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-6">
-            <h1 class="display-3">Hi Im Waseem!</h1>
-            <p class="lead">Web Developer in the making!!</p>
-          </div>
-          <div class="col-sm-12 col-md-6 col lg-6">
-            <img src="https://placehold.co/200x200" alt="" />
+        <div class="jumboCopy">
+          <!-- Hero Section -->
+          <div class="row">
+            <div class="col-lg-6 heroText">
+              <h1 class="display-4">Hi I'm Waseem</h1>
+              <p class="lead">Web Developer & IT Manager</p>
+              <!-- <hr class="my-4" /> -->
+              <div class="icons">
+                <a href="mailto:wmohammad83@icloud.com" class=""
+                  ><i class="fa-regular fa-envelope"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://uk.linkedin.com/in/waseem-mohammad-a587061b2?original_referer=https%3A%2F%2Fwww.google.com%2F"
+                  class=""
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
+            </div>
+            <div class=""></div>
           </div>
         </div>
       </div>
@@ -74,78 +84,92 @@
     <!-- Work Section -->
     <section id="work">
       <div class="container">
-        <h4>Portfolio Work</h4>
+        <h4 class="text-center section-title">Portfolio Work</h4>
         <div class="row">
-          <!-- Card 3 -->
-          <div class="col-sm-12 col-md-6 col-lg-3">
+          <!-- Card 1 -->
+          <div class="col-sm-12 col-md-12 col-lg-12">
             <div class="card my-4">
-              <img
-                src="https://placehold.co/400"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <!-- Card 4 -->
-          <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card my-4">
-              <img
-                src="https://placehold.co/400"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+              <img src="./images/HoriseonProject.png" class="" alt="..." />
+              <div class="card-txt">
+                <div class="card-body">
+                  <h5 class="card-title">Horiseon - HTML/CSS</h5>
+                  <p class="card-text">
+                    The aim of this project was to refactor the html to make it
+                    more accessible by changing the div tags with semantic html
+                    elements. The css was also modified to clean out the
+                    repeated code.
+                  </p>
+                  <div class="card-btn">
+                    <a
+                      target="_blank"
+                      href="https://wmohammad83.github.io/horiseon-module-1-challange"
+                      class="btn btn-secondary"
+                    >
+                      <i class="fa-solid fa-arrow-right"></i> Website</a
+                    >
+                    <a
+                      target="_blank"
+                      href="https://github.com/wmohammad83/horiseon-module-1-challange"
+                      class="btn btn-secondary"
+                    >
+                      <i class="fa-brands fa-github"></i> Git Repo</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
           <!-- Card 3 -->
-          <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="col-sm-12 col-md-6 col-lg-6">
             <div class="card my-4">
               <img
-                src="https://placehold.co/400"
+                src="./images/projectThreeDemo.jpg"
                 class="card-img-top"
                 alt="..."
               />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div class="">
+                <div class="card-body">
+                  <h5 class="card-title">Trillogy Bootcamp Pre-Work</h5>
+                  <p class="card-text">
+                    The aim of this project was to get farmiliar with basic html
+                    and css by building a small project. This will be a
+                    reference guide for me or anyone to refer back to.
+                  </p>
+                  <div class="card-btn">
+                    <a
+                      target="_blank"
+                      href="https://wmohammad83.github.io/prework-study-guide"
+                      class="btn btn-secondary"
+                    >
+                      <i class="fa-solid fa-arrow-right"></i> Website</a
+                    >
+                    <a
+                      target="_blank"
+                      href="https://github.com/wmohammad83/prework-study-guide"
+                      class="btn btn-secondary"
+                    >
+                      <i class="fa-brands fa-github"></i> Git Repo</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <!-- Card 4 -->
-          <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="col-sm-12 col-md-6 col-lg-6">
             <div class="card my-4">
               <img
-                src="https://placehold.co/400"
+                src="./images/projectThreeDemo.jpg"
                 class="card-img-top"
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Future Project</h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  This is a placeholder for a future project where the website
+                  link and placeholder will be placed.
                 </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
           </div>
@@ -154,15 +178,17 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
+    <section class="skills" id="skills">
       <div class="container">
-        <h4>My Skills</h4>
+        <h4 class="text-center section-title">My Skills</h4>
         <div class="row">
           <!-- Card 1 -->
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card my-4">
+            <div class="card text-center my-4">
               <div class="card-body">
-                <i class="fa-brands fa-html5"></i>
+                <span class="skill-icon">
+                  <i class="fa-brands fa-html5"></i>
+                </span>
                 <h4 class="text-uppercase">html</h4>
               </div>
             </div>
@@ -170,45 +196,55 @@
 
           <!-- Card 2 -->
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card my-4">
+            <div class="card text-center my-4">
               <div class="card-body">
-                <i class="fa-brands fa-css3-alt"></i>
+                <span class="skill-icon">
+                  <i class="fa-brands fa-css3-alt"></i>
+                </span>
                 <h4 class="text-uppercase">css</h4>
               </div>
             </div>
           </div>
           <!-- Card 3 -->
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card my-4">
+            <div class="card text-center my-4">
               <div class="card-body">
-                <i class="fa-brands fa-bootstrap"></i>
+                <span class="skill-icon">
+                  <i class="fa-brands fa-bootstrap"></i>
+                </span>
                 <h4 class="text-uppercase">bootstrap</h4>
               </div>
             </div>
           </div>
           <!-- Card 4 -->
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card my-4">
+            <div class="card text-center my-4">
               <div class="card-body">
-                <i class="fa-brands fa-square-js"></i>
+                <span class="skill-icon">
+                  <i class="fa-brands fa-square-js"></i>
+                </span>
                 <h4 class="text-uppercase">javascript</h4>
               </div>
             </div>
           </div>
           <!-- Card 5 -->
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card my-4">
+            <div class="card text-center my-4">
               <div class="card-body">
-                <i class="fa-brands fa-react"></i>
+                <span class="skill-icon">
+                  <i class="fa-brands fa-react"></i>
+                </span>
                 <h4 class="text-uppercase">react</h4>
               </div>
             </div>
           </div>
           <!-- Card 6 -->
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card my-4">
+            <div class="card text-center my-4">
               <div class="card-body">
-                <i class="fa-brands fa-node"></i>
+                <span class="skill-icon">
+                  <i class="fa-brands fa-node"></i>
+                </span>
                 <h4 class="text-uppercase">node js</h4>
               </div>
             </div>
@@ -222,12 +258,35 @@
       <div class="container my-4">
         <div class="row">
           <div class="col-sm-12 col-md-6">
-            <h4>About</h4>
-            <p>Hi, I'm Waseem</p>
+            <h4 class="section-title">About</h4>
+            <p>
+              Hi I’m waseem an aspiring developer in the making, I started my
+              career as a dispensing optician in 2007 where I developed an
+              interest in IT and technology. I went on to take some
+              certifications to kickstart my career within an IT support role
+              and I have worked my way up to a cluster IT manager role
+              supporting teaching staff and students across 9 academy schools. I
+              developed an interest in programming through a friend and through
+              his aspirations I started looking into programming and web
+              development and after going through some tutorials on YouTube and
+              Udemy, I decided that this is something I want to do and enrolled
+              onto the trillogy frontend Bootcamp to learn more about web
+              development.
+            </p>
+            <p>
+              so far through my studies, not only have I learned about HTML and
+              CSS, but I have also learned about the importance of creating
+              responsing web pages using CSS grids and flexbox and the next
+              stage is going to be working with JavaScript.
+            </p>
           </div>
           <div class="col-sm-12 col-md-6">
-            <h4>Contact Me</h4>
+            <h4 class="section-title">Contact Me</h4>
             <form action="">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" />
+              </div>
               <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" class="form-control" id="email" />
@@ -241,7 +300,9 @@
                   class="form-control"
                 ></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-secondary btn-block">
+                <i class="fa-regular fa-envelope"></i> Submit
+              </button>
             </form>
           </div>
         </div>
@@ -251,37 +312,38 @@
     <!-- Footer -->
     <footer>
       <div class="container">
-        <div class="row">
-          <p>Copyright &copy; Waseem Mohammad 2022</p>
+        <div class="row text-center">
+          <div class="col-12">
+            <div class="footer-icons">
+              <a href="mailto:wmohammad83@icloud.com"
+                ><i class="fa-regular fa-envelope"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://uk.linkedin.com/in/waseem-mohammad-a587061b2?original_referer=https%3A%2F%2Fwww.google.com%2F"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
         </div>
-        <div class="row">
-          <div class="col-sm-12 col-md-6"></div>
-          <div class="col-sm-12 col-md-6">
-            <div class="row">
-              <div class="col-12">
-                <a href="#" class=""
-                  ><i class="fa-regular fa-envelope"></i>
-                  wmohammad83@icloud.com</a
-                >
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <a href="#" class=""
-                  ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
-                >
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <a href="#" class=""
-                  ><i class="fa-brands fa-instagram"></i> Instagram</a
-                >
-              </div>
-            </div>
+        <div class="row text-center">
+          <div class="col-12">
+            <p class="py-4">Copyright &copy; Waseem Mohammad 2022</p>
           </div>
         </div>
       </div>
     </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
