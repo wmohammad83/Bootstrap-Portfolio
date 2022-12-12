@@ -18,7 +18,7 @@ The webpage has a responsive design created using bootstrap grid as well as flex
 
 ## Deployment
 ***
-[Portfolio Website - https://wmohammad83.github.io/bootstrap-portfolio](https://wmohammad83.github.io/bootstrap-portfolio)
+[Portfolio Website - https://wmohammad83.github.io/Bootstrap-Portfolio](https://wmohammad83.github.io/Bootstrap-Portfolio)
 
 ## Resources Used
 ***
