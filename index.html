@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Fontawsome Link -->
     <script
       src="https://kit.fontawesome.com/2888077925.js"
       crossorigin="anonymous"
@@ -26,7 +27,7 @@
   <body>
     <div class="jumbotron">
       <div class="container">
-        <!-- Bootstrap navbar -->
+        <!-- Navbar Section -->
         <nav class="navbar navbar-expand-lg navbar-dark">
           <button
             class="navbar-toggler"
@@ -42,27 +43,27 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#about-contact">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#work">Work</a>
+                <a class="nav-link" href="#work">Portfolio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#skills">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about-contact">Contact</a>
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
         </nav>
-        <div class="jumboCopy">
-          <!-- Hero Section -->
+
+        <!-- Hero Section -->
+        <div class="hero">
           <div class="row">
             <div class="col-lg-6 heroText">
               <h1 class="display-4 font-weight-bold">Hi I'm Waseem</h1>
               <p class="lead">Web Developer & IT Manager</p>
-              <!-- <hr class="my-4" /> -->
               <div class="icons">
                 <a href="mailto:wmohammad83@icloud.com" class=""
                   ><i class="fa-regular fa-envelope"></i
@@ -78,21 +79,23 @@
                 <i class="fa-regular fa-envelope"></i> Contact Me
               </a>
             </div>
-            <div class=""></div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Work Section -->
+    <!-- Portfolio Section -->
     <section id="work">
       <div class="container">
-        <h4 class="text-center section-title text-uppercase">Portfolio Work</h4>
+        <h4 class="text-center section-title text-uppercase">Portfolio</h4>
         <div class="row">
           <!-- Card 1 -->
           <div class="col-sm-12 col-md-12 col-lg-12">
             <div class="card my-4">
-              <img src="./images/HoriseonProject.png" class="" alt="..." />
+              <img
+                src="./images/HoriseonProject.png"
+                alt="Horiseon project image"
+              />
               <div class="card-txt">
                 <div class="card-body">
                   <h5 class="card-title">
@@ -125,14 +128,13 @@
               </div>
             </div>
           </div>
-
-          <!-- Card 3 -->
+          <!-- Card 2 -->
           <div class="col-sm-12 col-md-6 col-lg-6">
             <div class="card my-4">
               <img
                 src="./images/projectThreeDemo.jpg"
                 class="card-img-top"
-                alt="..."
+                alt="Placeholder for pre-work project"
               />
               <div class="">
                 <div class="card-body">
@@ -166,13 +168,13 @@
               </div>
             </div>
           </div>
-          <!-- Card 4 -->
+          <!-- Card 3 -->
           <div class="col-sm-12 col-md-6 col-lg-6">
             <div class="card my-4">
               <img
                 src="./images/projectThreeDemo.jpg"
                 class="card-img-top"
-                alt="..."
+                alt="placeholder for future project"
               />
               <div class="card-body">
                 <h5 class="card-title">Future Project</h5>
@@ -190,7 +192,9 @@
     <!-- Skills Section -->
     <section class="skills" id="skills">
       <div class="container">
-        <h4 class="text-center section-title text-uppercase">My Skills</h4>
+        <h4 class="text-center section-title text-uppercase skills-title">
+          My Skills
+        </h4>
         <div class="row">
           <!-- Card 1 -->
           <div class="col-sm-12 col-md-6 col-lg-3">
@@ -203,7 +207,6 @@
               </div>
             </div>
           </div>
-
           <!-- Card 2 -->
           <div class="col-sm-12 col-md-6 col-lg-3">
             <div class="card text-center my-4">
@@ -274,11 +277,14 @@
       </div>
     </section>
 
-    <!-- About/Contact Me -->
-    <section id="about-contact">
+    <!-- About/Contact Section -->
+    <section>
       <div class="container my-4">
         <div class="row">
-          <div class="col-sm-12 col-md-6 text-sm-center text-md-left">
+          <div
+            class="col-sm-12 col-md-6 text-sm-center text-lg-left"
+            id="about"
+          >
             <h4 class="section-title text-uppercase">About</h4>
             <p>
               Hi I’m waseem an aspiring developer in the making, I started my
@@ -301,7 +307,7 @@
               stage is going to be working with JavaScript.
             </p>
           </div>
-          <div class="col-sm-12 col-md-6">
+          <div class="col-sm-12 col-md-6" id="contact">
             <h4
               class="section-title text-uppercase text-sm-center text-md-left"
             >
@@ -342,7 +348,7 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer>
       <div class="container">
         <div class="row text-center">

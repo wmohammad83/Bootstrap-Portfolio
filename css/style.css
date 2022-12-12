@@ -1,3 +1,11 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* Universal Settings */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* Smooth scroll */
 html {
   scroll-behavior: smooth;
@@ -7,37 +15,29 @@ section {
   margin-top: 50px;
 }
 
-/* navbar */
+/* Navbar */
 .navbar-brand,
 .nav-link,
 .navbar-toggler {
-  color: #fffbeb !important;
-}
-
-.custom-toggler.navbar-toggler {
-  border-color: rgb(255, 102, 203);
-}
-
-hr {
-  color: #fffbeb;
+  color: white !important;
 }
 
 .nav-link:hover {
-  color: #495579 !important;
+  color: #929AAB !important;
 }
 
-/* Jumbotron  */
+/* Hero Section  */
 .jumbotron {
-  background-image: url("https://images.unsplash.com/photo-1670520616455-843979f02d11?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80");
+  background-image: url("../images/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: calc(100vh - 25px);
   display: flex;
 }
 
-/* Jumbotron copy */
-.jumboCopy {
-  color: #fffbeb;
+/* Hero Text */
+.hero {
+  color: white;
   text-align: center;
 }
 
@@ -56,12 +56,19 @@ hr {
   margin: 10px;
 }
 
-.btn-custom {
-  /* color: white; */
-  background-color: #fffbeb !important;
+.icons a:hover {
+  color: #929AAB;
 }
 
-/* Projects Section */
+.btn-custom {
+  background-color: white;
+}
+
+.btn-custom:hover {
+  background-color: #929AAB;
+}
+
+/* Portfolio Section */
 .project-img {
   height: 100%;
   image-size: cover;
@@ -92,43 +99,46 @@ hr {
 .card-txt {
   padding: 30px;
   border-radius: 0px 0px 40px 40px;
-  background-color: rgba(174, 189, 202, 0.8);
+  background-color: #393E46;
+  color: #F7F7F7;
 }
 
+/* Skills Section */
 .skills {
   padding: 40px;
-  background-color: #aebdca;
+  background-color: #393E46;
 }
 
 .skill-icon {
   font-size: 60px;
 }
 
+.skills-title {
+  color: white;
+}
+
 .section-title {
   font-size: 40px;
 }
 
-/* ============== */
-/* Footer */
+/* Footer Section */
 footer {
   height: 200px;
   padding: 40px;
-  background-color: #aebdca;
+  background-color: #393E46;
 }
 
 footer p {
-  color: #fffbeb;
+  color: white;
 }
 
 .footer-icons a {
   font-size: 30px;
   padding: 15px;
-  padding-bottom: 50px;
-  padding-top: 40px;
-  color: #fffbeb;
+  color: white;
 }
 
-.footer-icons a:hover {
-  color: black;
-  /* box-shadow: rgba(255, 255, 255, 0.) */
+footer a:hover {
+  color: #929AAB;
+  box-shadow: 0px 0px 10px white;
 }
